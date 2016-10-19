@@ -1,3 +1,2 @@
-# reddit-tomachan-poster
-A reddit bot for /u/Tadokoro.
-Requires `feedparser`, `praw`, and `praw-oath2util`
+# reddit-bots
+A place for all of my reddit bots

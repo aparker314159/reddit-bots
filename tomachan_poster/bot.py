@@ -21,13 +21,13 @@ user_agent = "A script to post the latest comic from read.tomochan.today by /u/a
 r = praw.Reddit(user_agent)
 o = OAuth2Util.OAuth2Util(r)
 o.refresh()
-"""while True:
+while True:
     hour = datetime.today().hour
     print(hour)
     if hour == 2:
         break
     sleep(3600)
-o.refresh()"""
+o.refresh()
 i = 0
 while i == 0:
     post_url = get_feed_entry().link
@@ -35,6 +35,6 @@ while i == 0:
     r.submit(subreddit, post_title, url=post_url, resubmit=True)
     print(post_title)
     print(post_url)
-#    sleep(86400)
+    sleep(86400)
     o.refresh()
-    i = i +1
+    i = i + 1

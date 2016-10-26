@@ -21,11 +21,12 @@ while True:
 #ALL ABOARD THE SWITCH HYPE TRAIN!
 #[CHOO CHOO!](http://imgur.com/y9igYes)
 
-""" + str(onboard) + """people onboard the hype train!
+""" + str(onboard) + """ people onboard the hype train!
 
-^________________________________
+^___________________________________________________________________
 
-^This ^is ^a ^bot, ^and ^this ^action ^was ^performed ^automatically. ^Please ^contact ^/u/aparker314159 ^for ^any ^questions ^or ^comments.
+^This ^is ^a ^bot, ^and ^this ^action ^was ^performed ^automatically.
+^Please ^contact ^/u/aparker314159 ^for ^any ^questions ^or ^comments.
         """
         c.reply(message)
         finished.update([c])

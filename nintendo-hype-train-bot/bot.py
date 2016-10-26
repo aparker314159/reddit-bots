@@ -18,13 +18,14 @@ while True:
             break
         onboard = onboard + 1
         message = """
-        #ALL ABOARD THE SWITCH HYPE TRAIN!
-        #[CHOO CHOO!](http://imgur.com/y9igYes)
-        """ + str(onboard) + """people onboard the hype train!
+#ALL ABOARD THE SWITCH HYPE TRAIN!
+#[CHOO CHOO!](http://imgur.com/y9igYes)
 
-        ^________________________________
+""" + str(onboard) + """people onboard the hype train!
 
-        ^This ^is ^a ^bot, ^and ^this ^action ^was ^performed ^automatically. ^Please ^contact ^/u/aparker314159 ^for ^any ^questions ^or ^comments.
+^________________________________
+
+^This ^is ^a ^bot, ^and ^this ^action ^was ^performed ^automatically. ^Please ^contact ^/u/aparker314159 ^for ^any ^questions ^or ^comments.
         """
         c.reply(message)
         finished.update([c])

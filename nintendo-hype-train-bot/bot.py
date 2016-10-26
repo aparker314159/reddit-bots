@@ -10,16 +10,7 @@ finished = set()
 onboard = 0
 
 def genmessage(count):
-    yield """
-#ALL ABOARD THE SWITCH HYPE TRAIN!
-#[CHOO CHOO!](http://imgur.com/y9igYes)"""
-+ str(count) + """ people onboard the hype train!
-^___________________________________________________________________
-
-^This ^is ^a ^bot, ^and ^this ^action ^was ^performed ^automatically.
-
-^Please ^contact ^[\/u\/aparker314159](https://reddit.com/user/aparker314159) ^for ^any ^questions ^or ^comments.
-"""
+    yield "#ALL ABOARD THE SWITCH HYPE TRAIN!\n#[CHOO CHOO!](http://imgur.com/y9igYes)\n" + str(onboard) + " people onboard the hype train!\n^___________________________________________________________________\n\n^This ^is ^a ^bot, ^and ^this ^action ^was ^performed ^automatically.\n\n^Please ^contact ^[\/u\/aparker314159](https://reddit.com/user/aparker314159) ^for ^any ^questions ^or ^comments."
 
 while True:
     subreddit = r.get_subreddit(subname)

@@ -4,8 +4,9 @@ import urllib.request
 import json
 
 from time import sleep
+from datetime import date
 
-subreddit = "aparkerbotplayground"
+subreddit = "DPTest"
 teams = {}
 standings = []
 
@@ -40,8 +41,8 @@ def bot_action():
 
     old_sidebar = r.get_settings(subreddit)['description']
 
-    new_sidebar = old_sidebar.partition("|:------------:|:----:|:----:|")[0] # Read up to the beginning of standings table
-    new_sidebar += "|:------------:|:----:|:----:|\n"
+    new_sidebar = old_sidebar.partition("#Division Standings")[0] # Read up to the beginning of standings table
+    new_sidebar += "#Division Standings\n\n\n| Team (accurate as of " + date.today().strftime('%m/%-e/%y') + ")     | W  | L  |\n|:------------:|:----:|:----:|\n"
 
     for t in standings:
         new_sidebar += "| " + t[0] + " | " + t[1] + " | " + t[2] + " |\n"

@@ -28,8 +28,7 @@ while True:
         break
     sleep(3600)
 o.refresh()
-i = 0
-while i == 0:
+while True:
     post_url = get_feed_entry().link
     post_title = "[DISCUSSION] Tomo-chan wa Onnanoko! Ch. " + get_post_chapter(post_url)
     r.submit(subreddit, post_title, url=post_url, resubmit=True)
@@ -37,4 +36,3 @@ while i == 0:
     print(post_url)
     sleep(86400)
     o.refresh()
-    i = i + 1
